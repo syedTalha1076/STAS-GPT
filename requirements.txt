@@ -22,3 +22,10 @@ sqlalchemy==2.0.50
 
 ipykernel
 tavily-python
+
+passlib[bcrypt]
+python-jose[cryptography]
+python-multipart
+
+python-docx 
+reportlab

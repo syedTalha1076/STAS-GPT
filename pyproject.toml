@@ -1,12 +1,10 @@
 [project]
 name = "stas-gpt"
 version = "0.1.0"
-description = "Add your description here"
+description = "STAS GPT - Agentic AI Chatbot"
 readme = "README.md"
-authors = [
-    { name = "Syed Talha Ali Shah", email = "syedtalhaa1076@gmail.com" }
-]
-requires-python = ">=3.13"
+requires-python = ">=3.13,<3.14"
+
 dependencies = [
     "chromadb==1.5.9",
     "docx2txt==0.9",
@@ -28,11 +26,11 @@ dependencies = [
     "sqlalchemy==2.0.50",
     "tavily-python==0.7.24",
     "uvicorn==0.48.0",
+    "passlib[bcrypt]",
+    "python-jose[cryptography]",
+    "python-docx>=1.2.0",
+    "reportlab>=5.0.1",
 ]
 
-[project.scripts]
-stas-gpt = "stas_gpt:main"
-
-[build-system]
-requires = ["uv_build>=0.12.1,<0.13.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
